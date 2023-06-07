@@ -1,8 +1,14 @@
 // out: "../css/main.css", compress: true, sourceMap: true
 
+
 @mainColor: #D3B288;
 @mainPadding: 150px;
 @mainFonts: 'Rubik';
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .container {
   max-width: max-content
@@ -11,7 +17,6 @@
 .services {
   padding-top: 120px;
   padding-bottom: 125px;
-
 
   .services-content {
     @mainMarginLeft: 10px;
@@ -66,9 +71,6 @@
   }
 }
 
-
-
-
 .catalog {
   padding-top: @mainPadding;
   padding-bottom: @mainPadding;
@@ -114,6 +116,76 @@
           color: #333333;
         }
       }
+    }
+  }
+}
+
+.foot {
+  background-color: @mainColor;
+  height: 433px;
+  max-width: none;
+  padding-top: 30px;
+
+  &-content {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+
+    &-header {
+      &-row {
+        &-number {
+          width: 381px;
+          font-family: 'Rubik';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 140%;
+          color: #FFFFFF;
+        }
+
+        &-addres {
+          font-family: 'Rubik';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 140%;
+          color: #FFFFFF;
+
+          &-line {
+            border: 1px dashed white;
+            width: 79%;
+          }
+
+        }
+
+        &-btn {
+          display: block;
+
+          text-align: center;
+          width: 114px;
+          font-family: 'Rubik';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 140%;
+          color: #D3B288;
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+
+          & p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+      &-line {
+        border: 1px solid white;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 101.2%;
+      }
+
     }
   }
 }
